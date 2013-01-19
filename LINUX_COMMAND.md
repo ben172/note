@@ -163,13 +163,13 @@
 
 
 
-## find backup
+### find backup
 
 	find . -type f -name "*.java" | xargs tar rvf myfile.tar
 
 
 
-## rsync 同步
+### rsync 同步
 
 	-k, --copy-dirlinks transform symlink to a dir into referent dir
 	-K, --keep-dirlinks treat symlinked dir on receiver as dir
