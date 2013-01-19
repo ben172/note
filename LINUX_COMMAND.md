@@ -2,7 +2,7 @@
 
 
 
-## 压缩,解压
+### 压缩,解压
 
 	tar -zxvf xxx.tar.gz -C xxx 将xxx.tar.gz解压到xxx
 	tar -zcvf xxx.tar.gz xxx 将xxx压缩成xxx.tar.gz
@@ -10,13 +10,13 @@
 	unzip xxx.zip -d xxx 将xxx.zip解压到xxx
  
 
-## xargs
+### xargs
 
 	ls | xargs -I {} cp -rf {} {}.bak
 
 
 
-## awk 用法：awk 'pattern {action}'
+### awk 用法：awk 'pattern {action}'
 
 	∘ pattern可以是以下任意一个：
 	‣ /正则表达式/：使用通配符的扩展集。
@@ -50,13 +50,13 @@
 	∘ OFS 输出域分隔符
 	∘ ORS 输出记录分隔符
 
-## 查看文件大小
+### 查看文件大小
 
 	du -sh xxx
 
 
 
-## ps
+### ps
 	ps -ef | grep -i 'php' | grep -v 'grep'
 
 ## SSH 公钥登录
@@ -66,13 +66,16 @@
 	ssh root@192.168.0.3
 
 
-## 搜索
+### 搜索
+
 	locate 更新 sudo updatedb
 	find / -name xxxx
 
-## 软链接：ln -s /mnt/hgfs/E/www /wwwroot
+### 软链接
 
-## 编译安装：
+	ln -s /mnt/hgfs/E/www /wwwroot
+
+### 编译安装
 
 	./configure
 	make
@@ -80,25 +83,27 @@
 
 
 
-## 添加用户组：
+### 添加用户组
 
 	/usr/sbin/groupadd www
 	/usr/sbin/useradd -g www www
 
 
 
-## 变更为其它使用者的身份：su root
+### 变更为其它使用者的身份
+
+	su root
 
 
 
-## netstat使用
+### netstat使用
 
 	netstat -lntp # 查看所有监听端口
 	netstat -antp # 查看所有已经建立的连接
 
 
 
-## 改变所属群组
+### 改变所属群组
 
 	chgrp [ -R ] 群组名称档案或目录（chgrp root XXX ）
 	[-R] 递归操作文件和目录
@@ -117,30 +122,44 @@
 
 
 
-## vmware-tool自动选择默认
+### vmware-tool自动选择默认
 
 	./vmware-install.pl -d
 
 
 
-## 查看编码：locale
-
-	复制：cp -rf
-	删除：rm -rf
-	新建目录：mkdir -p /mnt/cdrom
-	挂载光驱：mount /dev/cdrom /mnt/cdrom
-	卸载光驱：umout /mnt/cdrom
-
-	关机：shutdown -h now
-	重启：reboot
-	注销：logout
+### 查看编码
+	locale
 
 
 
-## 时间转换
-	秒数转时间: date -d'@1329893668' +'%Y-%m-%d %H:%M:%S'
-	时间转秒数: date -d'2011-10-10' +%s
+### 复制,删除
 
+	cp -rf
+	rm -rf
+	
+	
+	
+### 挂载光驱,卸载光驱
+
+	mkdir -p /mnt/cdrom
+	mount /dev/cdrom /mnt/cdrom
+	umout /mnt/cdrom
+	
+	
+	
+### 关机,重启,注销
+
+	shutdown -h now
+	reboot
+	logout
+
+
+
+### 时间转换
+
+	date -d'@1329893668' +'%Y-%m-%d %H:%M:%S' #秒数转时间:
+	date -d'2011-10-10' +%s #时间转秒数
 
 
 
