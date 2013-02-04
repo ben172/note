@@ -6,6 +6,8 @@
 
 	tar -zxvf xxx.tar.gz -C xxx 将xxx.tar.gz解压到xxx
 	tar -zcvf xxx.tar.gz xxx 将xxx压缩成xxx.tar.gz
+	tar -zjvf xxx.tar.gz2 -C xxx 将xxx.tar.gz2解压到xxx
+	tar -ztvf xxx.tar.gz 查看xxx.tar.gz里的文件
 	unrar x xxx.rar xxx 将xxx.rar解压到xxx
 	unzip xxx.zip -d xxx 将xxx.zip解压到xxx
  
@@ -56,6 +58,12 @@
 
 
 
+### 查看磁盘空间占用情况
+
+	df -h
+
+
+
 ### ps
 	ps -ef | grep -i 'php' | grep -v 'grep'
 
@@ -71,9 +79,13 @@
 	locate 更新 sudo updatedb
 	find / -name xxxx
 
+
+
 ### 软链接
 
 	ln -s /mnt/hgfs/E/www /wwwroot
+
+
 
 ### 编译安装
 
