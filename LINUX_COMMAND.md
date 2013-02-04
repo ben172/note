@@ -67,7 +67,9 @@
 ### ps
 	ps -ef | grep -i 'php' | grep -v 'grep'
 
-## SSH 公钥登录
+
+
+### SSH 公钥登录
 
 	ssh-keygen -t rsa
 	ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.3
