@@ -193,3 +193,17 @@
 	OR
 
 	sudo rsync -zrptogv --delete --exclude={.buildpath,.project,.settings} /home/bhuang/www/YII /home/bhuang/share/site
+
+### sort用法
+
+	-k, --key=POS1[,POS2] start a key at POS1 (origin 1), end it at POS2 (default end of line);POS is F[.C][OPTS], where F is the field number and C the character position in the field; both are origin 1
+	-r, --reverse reverse the result of comparisons
+	-f, --ignore-case fold lower case to upper case characters
+	-t, --field-separator=SEP use SEP instead of non-blank to blank transition
+
+	sort -k2.2 -r -n -t : xxx.txt
+
+
+### uniq用法
+
+	-c, --count prefix lines by the number of occurrences
